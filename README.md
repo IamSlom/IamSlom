@@ -12,12 +12,12 @@
 - Sharing knowledge and helping others in the open-source community.  
 
 ## My Setup  
-- **OS**: Arch Linux  
+- **OS**: Android, Kali Linux
 - **Language**: PHP 7.0.3  
-- **Specialty**: Genisys 1.9.3 plugins, PMMP 2.0.0 plugins  
+- **Specialty**: PMMP 2.0.0  
 
 ## Fun Fact  
-If Meta's AI tries to fight me, I'd say, "Nah, I'd win."  
+"It is impossible for most people to lick their own elbow. (try it!) XD"  
 
-## Let's Connect  
+## My Projects y Repositorys
 Feel free to check out my repositories and reach out if you're interested in collaborating!
