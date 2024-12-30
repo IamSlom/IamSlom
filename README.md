@@ -20,4 +20,4 @@
 "It is impossible for most people to lick their own elbow. (try it!) XD"  
 
 ## My Projects y Repositorys
-Feel free to check out my repositories and reach out if you're interested in collaborating!
+You Can Check What Do You Like, Most of Them are plugins for PMMP&Genysis
