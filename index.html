@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Donate to Our Cause</title>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <h1>Support Us with a Donation</h1>
     </header>
     <main>
+        <section id="donation-amount-selection">
+            <h2>Choose or Enter Donation Amount:</h2>
+            <div>
+                <input type="radio" id="amount10" name="donation_amount_preset" value="10">
+                <label for="amount10">$10</label>
+                <input type="radio" id="amount25" name="donation_amount_preset" value="25">
+                <label for="amount25">$25</label>
+                <input type="radio" id="amount50" name="donation_amount_preset" value="50">
+                <label for="amount50">$50</label>
+                <input type="radio" id="amount100" name="donation_amount_preset" value="100">
+                <label for="amount100">$100</label>
+            </div>
+            <div>
+                <label for="custom-amount">Or Enter Custom Amount:</label>
+                <input type="number" id="custom-amount" name="custom_donation_amount" placeholder="e.g., 42">
+            </div>
+        </section>
         <section id="stripe-payment">
-            <h2>Stripe</h2>
+            <h2>Pay with Card (Stripe)</h2>
             <div id="stripe-payment-form">
                 <div id="card-element"></div>
-                <button>Pay with Card</button>
+                <button>Donate with Card</button>
             </div>
         </section>
         <section id="paypal-payment">
@@ -27,15 +45,15 @@
         <section id="crypto-payment">
             <h2>Cryptocurrency</h2>
             <div>
-                <p>Pay with your preferred cryptocurrency.</p>
-                <button>Pay with Crypto</button>
+                <p>Donate with your preferred cryptocurrency.</p>
+                <button>Donate with Crypto</button>
             </div>
         </section>
         <section id="cash-app-payment">
             <h2>Cash App</h2>
             <div>
-                <p>Pay with Cash App.</p>
-                <button>Pay with Cash App</button>
+                <p>Donate with Cash App.</p>
+                <button>Donate with Cash App</button>
             </div>
         </section>
     </main>

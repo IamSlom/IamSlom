@@ -67,6 +67,40 @@ label {
     color: #555555;
 }
 
+#donation-amount-selection {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#donation-amount-selection h2 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+#donation-amount-selection div {
+    margin-bottom: 10px;
+}
+
+#donation-amount-selection label {
+    margin-right: 10px;
+    font-size: 0.95em;
+}
+
+#donation-amount-selection input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#donation-amount-selection input[type="number"] {
+    width: calc(100% - 22px); /* Consistent with other text inputs */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 #card-element {
     border: 1px solid #cccccc;
     padding: 10px;
