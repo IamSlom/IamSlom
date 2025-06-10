@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section id="stripe-payment">
+            <h2>Stripe</h2>
+            <div id="stripe-payment-form">
+                <div id="card-element"></div>
+                <button>Pay with Card</button>
+            </div>
+        </section>
+        <section id="paypal-payment">
+            <h2>PayPal</h2>
+            <div id="paypal-button-container">
+            </div>
+        </section>
+        <section id="crypto-payment">
+            <h2>Cryptocurrency</h2>
+            <div>
+                <p>Pay with your preferred cryptocurrency.</p>
+                <button>Pay with Crypto</button>
+            </div>
+        </section>
+        <section id="cash-app-payment">
+            <h2>Cash App</h2>
+            <div>
+                <p>Pay with Cash App.</p>
+                <button>Pay with Cash App</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="payments.js" defer></script>
+</body>
+</html>
