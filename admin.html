@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="admin_style.css">
 </head>
 <body>
+    <div id="star-background-container"></div>
     <header>
         <h1>Payment Administration Panel</h1>
     </header>
@@ -39,7 +40,7 @@
         </section>
         <section id="payment-logs">
             <h2>Payment Logs</h2>
-            <div id="logs-display" style="height: 200px; border: 1px solid #ccc; overflow-y: scroll; padding: 10px; background-color: #f9f9f9;">
+            <div id="logs-display">
                 Logs will appear here...
             </div>
             <button id="refresh-logs-button">Refresh Logs</button>
@@ -53,5 +54,6 @@
         <p>&copy; 2024 Payment Admin Panel</p>
     </footer>
     <script src="admin.js" defer></script>
+    <script src="animations.js" defer></script>
 </body>
 </html>
