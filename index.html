@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Our Product - Set Your Price</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="star-background-container"></div>
+    <header>
+        <h1>Purchase Our Flexible Product</h1>
+        <p>Set your own price for our innovative product. We believe in flexibility and value your contribution.</p>
+    </header>
+    <main>
+        <section id="product-price-selection">
+            <h2>Choose or Enter Your Price:</h2>
+            <div>
+                <input type="radio" id="price10" name="product_price_preset" value="10">
+                <label for="price10">$10</label>
+                <input type="radio" id="price25" name="product_price_preset" value="25">
+                <label for="price25">$25</label>
+                <input type="radio" id="price50" name="product_price_preset" value="50">
+                <label for="price50">$50</label>
+                <input type="radio" id="price100" name="product_price_preset" value="100">
+                <label for="price100">$100</label>
+            </div>
+            <div>
+                <label for="custom-price">Or Enter Custom Price:</label>
+                <input type="number" id="custom-price" name="custom_product_price" placeholder="e.g., 42">
+            </div>
+        </section>
+        <section id="stripe-payment">
+            <h2>Pay with Card (Stripe)</h2>
+            <div id="stripe-payment-form">
+                <div id="card-element"></div>
+                <button>Purchase with Card</button>
+            </div>
+        </section>
+        <section id="paypal-payment">
+            <h2>PayPal</h2>
+            <div id="paypal-button-container">
+            </div>
+        </section>
+        <section id="crypto-payment">
+            <h2>Cryptocurrency</h2>
+            <div>
+                <p>Purchase with your preferred cryptocurrency.</p>
+                <button>Purchase with Crypto</button>
+            </div>
+        </section>
+        <section id="cash-app-payment">
+            <h2>Cash App</h2>
+            <div>
+                <p>Purchase with Cash App.</p>
+                <button>Purchase with Cash App</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="payments.js" defer></script>
+    <script src="animations.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+<body>
+    <div id="star-background-container"></div>
+    <header>
+        <h1>Payment Administration Panel</h1>
+    </header>
+    <main>
+        <section id="api-key-management">
+            <h2>API Key Management</h2>
+            <form id="api-key-form">
+                <div>
+                    <label for="stripe-publishable-key">Stripe Publishable Key:</label>
+                    <input type="text" id="stripe-publishable-key" name="stripe_publishable_key">
+                </div>
+                <div>
+                    <label for="stripe-secret-key">Stripe Secret Key:</label>
+                    <input type="password" id="stripe-secret-key" name="stripe_secret_key">
+                </div>
+                <div>
+                    <label for="paypal-client-id">PayPal Client ID:</label>
+                    <input type="text" id="paypal-client-id" name="paypal_client_id">
+                </div>
+                <div>
+                    <label for="crypto-api-key">Crypto API Key (Placeholder):</label>
+                    <input type="text" id="crypto-api-key" name="crypto_api_key">
+                </div>
+                <div>
+                    <label for="cash-app-api-key">Cash App API Key (Placeholder):</label>
+                    <input type="text" id="cash-app-api-key" name="cash_app_api_key">
+                </div>
+                <button type="submit">Save API Keys</button>
+            </form>
+        </section>
+        <section id="payment-logs">
+            <h2>Payment Logs</h2>
+            <div id="logs-display">
+                Logs will appear here...
+            </div>
+            <button id="refresh-logs-button">Refresh Logs</button>
+        </section>
+        <section id="system-status">
+            <h2>System Overview</h2>
+            <p>System status information will be displayed here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Payment Admin Panel</p>
+    </footer>
+    <script src="admin.js" defer></script>
+    <script src="animations.js" defer></script>
+</body>
+</html>
